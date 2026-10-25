@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="سُـلالة | استوديو ومختبر القهوة المختصة وتجربة الباريستا التفاعلية - معايير SCA وأصالة البُن السعودي" />
+  <title>سُـلالة | Sulalah Specialty Coffee Lab & Studio</title>
+
+  <!-- Google Fonts: Cairo, Tajawal, Playfair Display, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="studio-navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-anchor">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16l-5 9v5l-3 2v-7L4 4z"/></svg>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">سُـلالة | Sulalah</span>
+          <span class="brand-sub">Specialty Coffee Studio</span>
+        </div>
+      </a>
+
+      <ul class="nav-links-list">
+        <li><a href="#brewing-lab" class="nav-link" data-i18n="navLab">مختبر التحضير</a></li>
+        <li><a href="#flavor-radar" class="nav-link" data-i18n="navRadar">رادار النكهات SCA</a></li>
+        <li><a href="#origins-atlas" class="nav-link" data-i18n="navAtlas">أطلس المحاصيل</a></li>
+        <li><a href="#water-chemistry" class="nav-link" data-i18n="navWater">كيمياء الماء</a></li>
+        <li><a href="#boutique" class="nav-link" data-i18n="navBoutique">بوتيك المحمصة</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button type="button" id="theme-toggle-btn" class="icon-btn" title="تغيير السمة">
+          <svg id="theme-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <!-- Language Switcher -->
+        <button type="button" id="lang-toggle-btn" class="icon-btn">
+          <span id="lang-label">English</span>
+        </button>
+
+        <!-- Cart Trigger -->
+        <button type="button" id="nav-cart-btn" class="icon-btn cart-toggle-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-text" data-i18n="cart">السلة</span>
+          <span id="cart-count-badge" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Container -->
+  <div id="hero-container"></div>
+
+  <!-- Interactive Barista Brewing Lab Container -->
+  <div id="brewing-lab-container"></div>
+
+  <!-- SCA Flavor Radar & Wheel Container -->
+  <div id="flavor-radar-container"></div>
+
+  <!-- Saudi Terroir & World Origins Atlas Container -->
+  <div id="origins-atlas-container"></div>
+
+  <!-- Water Chemistry & Mineral Calculator Container -->
+  <div id="water-chem-container"></div>
+
+  <!-- Roastery Boutique Container -->
+  <div id="boutique-container"></div>
+
+  <!-- Footer -->
+  <footer class="studio-footer">
+    <div class="footer-inner">
+      <div class="brand-text-block">
+        <span class="brand-title">سُـلالة | Sulalah Specialty Coffee Lab</span>
+        <span class="brand-sub">Crafted with precision for coffee connoisseurs & baristas</span>
+      </div>
+      <p class="footer-copy">
+        جميع الحقوق محفوظة © 2026 سُلالة للقهوة المختصة • مستوحى من معايير جمعية القهوة المختصة (SCA) ومدرجات البُن الخولاني العريق.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Slide Cart Drawer Container -->
+  <div id="cart-drawer-container"></div>
+
+  <!-- Receipt Modal Container -->
+  <div id="receipt-modal-container"></div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
